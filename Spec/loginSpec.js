@@ -1,5 +1,5 @@
-var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
-var loginpage = require("D:/AutomationProject/Protractor Tool/Webpage/Pages/loginPage.js");
+var locator = require('../locators.js');
+var loginpage = require("../Pages/loginPage.js");
 
 describe("To test the test-cases for log-in page",function(){
 

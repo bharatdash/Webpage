@@ -1,6 +1,6 @@
-var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
-var dashboardPage = require('D:/AutomationProject/Protractor Tool/Webpage/Pages/dashboardPage.js');
-var loginPage = require('D:/AutomationProject/Protractor Tool/Webpage/Pages/loginPage.js');
+var locator = require('../locators.js');
+var dashboardPage = require('../Pages/dashboardPage.js');
+var loginPage = require('../Pages/loginPage.js');
 //Test for dashboard page
 describe("Verification of dashboard page" , function(){
 	//Opens the web-site before spec

@@ -1,14 +1,15 @@
 var locators = function(){
 
 	//header locators
-	var heading = element(by.xpath("//a[@class='brand']"));
-	var searchBar = element(by.xpath("//input[@class='search-query']"));
-	var accounts = element(by.xpath("//li[@class='dropdown open']/child::a[1]"));
-	var settings = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
-	var help = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
-	var userIcon = element(by.xpath("//i[@class='icon-user']"));
-	var profile = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
-	var logout = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
+	this.heading = element(by.xpath("//a[@class='brand']"));
+	this.searchBar = element(by.xpath("//input[@class='search-query']"));
+	this.accounts = element(by.xpath("//li[@class='dropdown open']/child::a[1]"));
+	this.settings = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
+	this.help = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
+	this.userIcon = element(by.xpath("//i[@class='icon-user']"));
+	this.profile = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
+	this.logout = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
+	
 	//locators of home-page
 	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.signUp = element(by.xpath("//a[@data-ui-sref='signup']"));
@@ -36,8 +37,7 @@ var locators = function(){
 
 	//locators for dashboard page
 	this.dashboard = element(by.xpath("//a[@ui-sref='dashboard']"));
-	this.dstats = element(by.partialLinkText("Today's Stats"));
-	//this.dstats = element(by.xpath("//div[@class='widget-header']/*[text()=" Today's Stats"]"));
+	this.dstats = element(By.xpath("//*[@id='ng-app']/body/div[3]/div/div/div/div[1]/div[1]/div[1]/h3"));
 	this.dImportantShorcuts = element(by.xpath("//div[@class='widget-header']/*[text()='Important Shortcuts']"));
 	this.dRecentNews = element(by.xpath("//div[@class='widget-header']/*[text()=' Recent News']"));
 	this.dCustomers = element(by.xpath("//div[@class='widget-header']/*[text()='Customers']"));
@@ -50,7 +50,8 @@ var locators = function(){
 	this.dphotos = element(by.xpath("//a[@class='shortcut']//*[text()='Photos']"));
 	this.dtags = element(by.xpath("//a[@class='shortcut']//*[text()='Tags']"));
 	this.activities = element.all(by.xpath("//div[@class='stat']"));
-	this.news = element(by.xpath("//li[@class='ng-scope']"));
+	this.thursdayNews = element(By.linkText("Thursday Roundup # 40"));
+	this.retinaNews = element(By.linkText("Retina Ready Responsive App Landing Page Website Template"));
 	this.customerTable = element(by.xpath("//table[@class='table table-striped table-bordered']//tr[1]"));
 
 	//locators for reports page
@@ -70,16 +71,18 @@ var locators = function(){
 	this.search_by_email = element(by.xpath("//thead[@class='ng-scope']/tr[2]/th[3]/div/div/div/input"));
 	this.search_by_phone = element(by.xpath("//thead[@class='ng-scope']/tr[2]/th[4]/div/div/div/input"));
 	this.search_by_country = element(by.xpath("//thead[@class='ng-scope']/tr[2]/th[5]/div/div/div/input"));
-	this.view = element(by.buttonText('View'));
+	this.view = element.all(by.buttonText('View'));
 	this.previous = element(by.xpath("//a[@ng-switch-when='prev']"));
 	this.next= element(by.xpath("//a[@ng-switch-when='next']"));
 	this.page1= element(by.xpath("//span[@ng-bind='page.number'][text()=1]"));
 	this.page2= element(by.xpath("//span[@ng-bind='page.number'][text()=2]"));
 	this.view_10_records = element(by.xpath("//span[@ng-bind='count'][text()=10]"));
 	this.view_25_records = element(by.xpath("//span[@ng-bind='count'][text()=25]"));
-	this.view_75_records = element(by.xpath("//span[@ng-bind='count'][text()=75]"));
+	this.view_50_records = element(by.xpath("//span[@ng-bind='count'][text()=50]"));
 	this.view_100_records = element(by.xpath("//span[@ng-bind='count'][text()=100]"));
-
+	this.error_message = element.all(by.xpath("//p[@class='validation-invalid']"));
+	this.first_row = element(by.xpath("//tbody/tr[1]"));
+	
 	//locators of Add customers tab
 	this.addcustomer= element(by.xpath("//i[@class='icon-bar-chart']"));
 	this.add_firstname = element(by.xpath("//input[@name='firstname']"));

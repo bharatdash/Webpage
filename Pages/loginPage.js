@@ -1,4 +1,4 @@
-var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
+var locator = require('../locators.js');
 
 this.verifyForInvalidEmail = function(){
 

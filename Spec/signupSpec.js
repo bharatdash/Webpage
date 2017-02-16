@@ -1,5 +1,5 @@
-var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
-var signupPage = require('D:/AutomationProject/Protractor Tool/Webpage/Pages/signupPage.js');
+var locator = require('../locators.js');
+var signupPage = require('../Pages/signupPage.js');
 describe("Create a new account" , function(){
 
 	//Enter the URL of the page

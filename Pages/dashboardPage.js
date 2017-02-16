@@ -1,5 +1,5 @@
-var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
-var loginPage = require('D:/AutomationProject/Protractor Tool/Webpage/Pages/loginPage.js');
+var locator = require('../locators.js');
+var loginPage = require('../Pages/loginPage.js');
 //function to Verify all the windows on the page
 this.dashboardWindows = function(){
 	expect(locator.dImportantShorcuts.getText()).toEqual("Important Shortcuts");
@@ -25,7 +25,7 @@ this.checkReports = function(){
 };
 
 
-///Function to verify the Comments Icon name
+//Function to verify the Comments Icon name
 this.checkComments = function(){
 	expect(locator.dcomments.getText()).toEqual("Comments");
 };
@@ -37,23 +37,23 @@ this.checkUsers = function(){
 };
 
 
-////Function to verify the Notes Icons name
+//Function to verify the Notes Icons name
 this.checkNotes = function(){
 	expect(locator.dnotes.getText()).toEqual("Notes");
 };
 
-////Function to verify the Photos Icon name
+//Function to verify the Photos Icon name
 this.checkPhotos = function(){
 	expect(locator.dphotos.getText()).toEqual("Photos");
 };
 
 
-////Function to verify the Tags Icon name
+//Function to verify the Tags Icon name
 this.checkTags = function(){
 	expect(locator.dtags.getText()).toEqual("Tags");
 };
 
-////Function to verify the number of activies present inside stats window
+//Function to verify the number of activies present inside stats window
 this.likeTweetShare = function(){
 	locator.activities.getText().then(function(count){
 		console.log("Types of activies present in stats windows are:"+count.length);
