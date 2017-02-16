@@ -1,58 +1,58 @@
-var locators = require("D:/AutomationProject/WebpageFinal/locators.js");
+var locator = require('D:/AutomationProject/Protractor Tool/Webpage/locators.js');
 
 this.verifyForInvalidEmail = function(){
 
 	//Enters blank E-mail id
-	locators.userName.sendKeys("123");
+	locator.userName.sendKeys("123");
 
 	//Password is already entered
 
 	//click on sign-in button
-	locators.signInButton.click();
+	locator.signInButton.click();
 
 	//Verifies that user is prompted to enter Valid E-mail
-	expect(locators.errorMessage).not.toEqual('welcome');
+	expect(locator.errorMessage).not.toEqual('welcome');
 
 };
 
 this.verfiyForEmptyPassword = function(){
 	
 	//Clears the password field
-	locators.password.clear();
+	locator.password.clear();
 	
 	//Click on sign-in button
-	locators.signInButton.click();
+	locator.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locators.errorMessage).not.toEqual('welcome');
+	expect(locator.errorMessage).not.toEqual('welcome');
 	
 };
 
 this.verifyForEmptyEmail = function(){
 	
 	//clears the email-id field
-	locators.userName.clear();
+	locator.userName.clear();
 	
 	//Click on sign-in button
-	locators.signInButton.click();
+	locator.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locators.errorMessage).not.toEqual('welcome');
+	expect(locator.errorMessage).not.toEqual('welcome');
 	
 };
 
 this.verifyForBothFieldsEmpty = function(){
 	//clears the email-id field
-	locators.userName.clear();
+	locator.userName.clear();
 	
 	//Clears the password field
-	locators.password.clear();
+	locator.password.clear();
 	
 	//Click on sign-in button
-	locators.signInButton.click();
+	locator.signInButton.click();
 	
 	//Verifies user is not logged in
-	expect(locators.errorMessage).not.toEqual('welcome');
+	expect(locator.errorMessage).not.toEqual('welcome');
 };
 
 this.verifyForValidCredentials = function(){
@@ -60,7 +60,7 @@ this.verifyForValidCredentials = function(){
 	//E-mail id and password are already entered
 	
 	//Click on sign-in button
-	locators.signInButton.click();
+	locator.signInButton.click();
 	
-	expect(locators.dashboard.getText()).toEqual("Dashboard");
+	expect(locator.dashboard.getText()).toEqual("Dashboard");
 };
