@@ -14,11 +14,14 @@ describe("To test for reports page",function(){
 
 	});
 
-	it("Should check for Customers and Orders", function(){
+	it("Should check for Customers ", function(){
 
 		//Verifies for Customer
 		reports.verifiesCustomersIsPresnet();
-
+	});
+	
+	it("Should check for Orders",function(){
+		
 		//Verifies for Orders
 		reports.verifiesOrdersIsPresent();
 
