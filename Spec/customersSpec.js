@@ -32,4 +32,11 @@ describe("Verification of Customer page" , function(){
 		customerPage.pageTwo();
 		customerPage.pageOne();
 	});
+
+	//To verify that view button and view tab are working
+	it("Verifiy that we can view the customer details",function(){
+		customerPage.viewTab();
+		
+	});
+
 });

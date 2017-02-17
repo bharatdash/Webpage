@@ -73,6 +73,7 @@ var locators = function(){
 	this.search_by_phone = element(by.xpath("//thead[@class='ng-scope']/tr[2]/th[4]/div/div/div/input"));
 	this.search_by_country = element(by.xpath("//thead[@class='ng-scope']/tr[2]/th[5]/div/div/div/input"));
 	this.view = element.all(by.buttonText('View'));
+	this.viewButton = element(by.buttonText('View'));
 	this.previous = element(by.xpath("//a[@ng-switch-when='prev']"));
 	this.next= element(by.xpath("//a[@ng-switch-when='next']"));
 	this.page1= element(by.xpath("//span[@ng-bind='page.number'][text()=1]"));
@@ -83,6 +84,9 @@ var locators = function(){
 	this.view_100_records = element(by.xpath("//span[@ng-bind='count'][text()=100]"));
 	this.error_message = element.all(by.xpath("//p[@class='validation-invalid']"));
 	this.first_row = element(by.xpath("//tbody/tr[1]"));
+	this.view_tab = element(by.xpath("//a[@ng-click='select()']"));
+	this.view_details = element(by.xpath("//div[@class='control-group']"));
+	this.view_name = element(by.xpath("//div[@class = 'controls ng-binding']"));
 
 	//locators of Add customers tab
 	this.addcustomer= element(by.xpath("//i[@class='icon-bar-chart']"));
