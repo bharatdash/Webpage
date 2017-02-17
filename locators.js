@@ -10,11 +10,7 @@ var locators = function(){
 	this.profile = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
 	this.logout = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
 	this.amasik = element(by.xpath("//div[@class='span12']/a"));
-<<<<<<< HEAD
-	
-=======
 
->>>>>>> 421e9bbcd1de39f1cde2b2b149df700ba9e66ac2
 	//locators of home-page
 	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.signUp = element(by.xpath("//a[@data-ui-sref='signup']"));
@@ -89,15 +85,10 @@ var locators = function(){
 	this.error_message = element.all(by.xpath("//p[@class='validation-invalid']"));
 	this.first_row = element(by.xpath("//tbody/tr[1]"));
 	this.view_tab = element(by.xpath("//a[@ng-click='select()']"));
-<<<<<<< HEAD
 	this.view_details = element.all(by.xpath("//div[@class='control-group']"));
 	this.viewButton = element(by.buttonText('View'));
-	
-=======
-	this.view_details = element(by.xpath("//div[@class='control-group']"));
 	this.view_name = element(by.xpath("//div[@class = 'controls ng-binding']"));
 
->>>>>>> 421e9bbcd1de39f1cde2b2b149df700ba9e66ac2
 	//locators of Add customers tab
 	this.addcustomer= element(by.xpath("//i[@class='icon-bar-chart']"));
 	this.add_firstname = element(by.xpath("//input[@name='firstname']"));
