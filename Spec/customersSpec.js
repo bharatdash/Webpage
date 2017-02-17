@@ -14,7 +14,7 @@ describe("Verification of Customer page" , function(){
 		customerPage.clickOnCustomerTab();
 		customerPage.verifyCustomerPage();
 	});
-	
+
 	//It block to sort the records of the customer table
 	it("Should sort all the records" , function(){
 		customerPage.sortByFname();
@@ -24,7 +24,7 @@ describe("Verification of Customer page" , function(){
 		customerPage.sortByCountry();
 		customerPage.searchForCustomer();
 	});
-	
+
 	//to verify Number of records per pages should not exceed the max limit and page number of the table
 	it("Number of records per pages should not exceed the max limit " , function(){
 		customerPage.maxRecordsTen();
@@ -36,7 +36,7 @@ describe("Verification of Customer page" , function(){
 	//To verify that view button and view tab are working
 	it("Verifiy that we can view the customer details",function(){
 		customerPage.viewTab();
-		
+
 	});
 
 });

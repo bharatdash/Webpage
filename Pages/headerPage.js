@@ -31,7 +31,7 @@ this.verifiesProfileIsPresent = function(){
 	expect(locators.profile.getText()).toContain("profile");
 	
 };
-
+}
 
 this.verifiesLogout = function(){
 	locators.userIcon.click();
@@ -47,7 +47,7 @@ this.clickOnAmasik = function(){
 	expect(browser.getCurrentUrl()).toEqual("http://www.amasik.com/");
 };
 
-}
+
 
 
 
