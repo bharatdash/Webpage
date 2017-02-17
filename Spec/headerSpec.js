@@ -25,4 +25,9 @@ describe("To check the header elements of the webpage",function(){
 		//Logs-out the user
 		headerElements.verifiesLogout();
 	});
+	
+	it("Should verify the link at the bottom" , function(){
+		//click amasik.com and verify the link
+		headerElements.clickOnAmasik();
+	});
 });

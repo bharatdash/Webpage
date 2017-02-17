@@ -1,12 +1,13 @@
 var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 
+
 this.isOnlyForElements = function(){
 
 this.verifiesThatHeadingIsPresent = function(){
 	expect(locators.heading.getText()).toContain('Framework with Bootstrap');
 	
-}
+};
 
 this.verifiesAccountsIsPresent = function(){
 	
@@ -19,7 +20,7 @@ this.verifiesAccountsIsPresent = function(){
 	//Check if help option is there
 	expect(locators.help.getText()).toContain("help");
 	
-}
+};
 
 this.verifiesProfileIsPresent = function(){
 	
@@ -29,8 +30,8 @@ this.verifiesProfileIsPresent = function(){
 	//Check if profile option is there
 	expect(locators.profile.getText()).toContain("profile");
 	
-}
-}
+};
+
 
 this.verifiesLogout = function(){
 	locators.userIcon.click();
@@ -38,4 +39,29 @@ this.verifiesLogout = function(){
 	browser.sleep(2000)
 	expect(locators.login.getText()).toEqual("Member Login");
 	
+};
+
+this.clickOnAmasik = function(){
+	locators.amasik.click();
+	browser.ignoreSynchronization = true;
+	expect(browser.getCurrentUrl()).toEqual("http://www.amasik.com/");
+};
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
