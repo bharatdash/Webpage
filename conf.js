@@ -3,7 +3,7 @@ exports.config = {
 
 		framework: 'jasmine',
 		seleniumAddress: 'http://localhost:4444/wd/hub',
-		specs: ['spec/loginSpec.js'],
+		specs: ['spec/headerSpec.js'],
 
 		jasmineNodeOpts: {defaultTimeoutInterval: 600000},
 		onPrepare: function(){
