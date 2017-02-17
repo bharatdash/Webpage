@@ -116,7 +116,17 @@ this.pageOne = function(){
 	expect(locator.first_row).not.toBe(null);
 };
 
+//Function to check on view tab after clicking the view button
+this.viewTab = function(){
 
+	locator.search_by_firstname.sendKeys("John");
+	var name = locator.first_row.getText();
+	locator.viewButton.click();
+	locator.view_tab.click();
+	var viewName = locator.view_name.getText();
+	expect(name).toContain(viewName);
+
+};
 
 
 
