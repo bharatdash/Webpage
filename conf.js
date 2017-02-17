@@ -3,7 +3,7 @@ exports.config = {
 
 		framework: 'jasmine',
 		seleniumAddress: 'http://localhost:4444/wd/hub',
-		specs: ['spec/addCustomerSpec.js'],
+		specs: ['spec/customersSpec.js'],
 		jasmineNodeOpts: {defaultTimeoutInterval: 600000},
 		onPrepare: function(){
 			browser.manage().window().maximize();
