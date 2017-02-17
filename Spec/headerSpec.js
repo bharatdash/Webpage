@@ -21,6 +21,9 @@ describe("To check the header elements of the webpage",function(){
 		
 		//Verifies all the header elements
 		headerElements.isOnlyForElements();
+	});	
+		
+	it("Should verify the log-out function",function(){
 		
 		//Logs-out the user
 		headerElements.verifiesLogout();
