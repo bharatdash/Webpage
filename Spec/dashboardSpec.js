@@ -11,7 +11,7 @@ describe("Verification of dashboard page" , function(){
 		//login the user
 		loginPage.verifyForValidCredentials();
 		dashboardPage.dashboardWindows();
-	});	
+	}); 
 
 	//Check for various links are present in the Important Shortcut window or not
 	it("Should check checkApps button present or not" , function(){
@@ -53,7 +53,7 @@ describe("Verification of dashboard page" , function(){
 		dashboardPage.checkTags();
 	});
 
-	////Checks activity window present or not
+	//Checks activity window present or not
 	it("Should check activity window present or not" , function(){
 		dashboardPage.likeTweetShare();
 	});
@@ -79,6 +79,10 @@ describe("Verification of dashboard page" , function(){
 	});
 
 	//check Thursday News Link button present or not
+	it("Should check activity window present or not" , function(){
+		dashboardPage.likeTweetShare();
+	});
+
 	it("Should check Thursday News Link button present or not" , function(){
 		dashboardPage.thursdayNewsLink();
 	});
@@ -100,8 +104,7 @@ describe("Verification of dashboard page" , function(){
 	
 	//check that thursday news is a link i.e clickable
 	it("Should check that thursday news is a link i.e clickable" , function(){
-		var EC = protractor.ExpectedConditions;	
-		browser.wait(EC.elementToBeClickable(locator.thursdayNews , 3000));
+		dashboardPage.verifiesNewsURL();
 	});
 });
 
@@ -135,3 +138,14 @@ describe("Verification of dashboard page" , function(){
 
 
 
+=======
+	it("Should check retina News Link button present or not" , function(){
+		dashboardPage.retinaNewsLink();
+	});
+
+	it("Should check that thursday news is a link i.e clickable" , function(){
+		dashboardPage.verifiesNewsURL();
+
+	});
+});
+>>>>>>> 28fa2848e02404e60272d17884ede9e2f8e6011d

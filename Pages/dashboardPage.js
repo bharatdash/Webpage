@@ -100,8 +100,12 @@ this.verifyBullHorn = function(){
 };
 
 
-
-
+//Function to check that news elements are clickable
+this.verifiesNewsURL = function(){
+	var EC = protractor.ExpectedConditions; 
+	browser.wait(EC.elementToBeClickable(locator.thursdayNews , 3000));
+	browser.wait(EC.elementToBeClickable(locator.retinaNews , 3000));
+};
 
 
 

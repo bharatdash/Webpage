@@ -41,4 +41,15 @@ describe("To test the test-cases for log-in page",function(){
 		expect(temp.getText()).toEqual("Email");
 	});*/
 
+	//Test case for checking the color of the error message
+	it("Should verify that the error message is in red colour",function(){
+		loginpage.verifyTheColorOfErrorMessage();
+		
+	});
+	
+	//Test case for checking the default label names
+	it("Should verify the default label names",function(){
+		loginpage.verifyTheLabelsOfTextField();
+		
+	});
 });
