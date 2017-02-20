@@ -57,22 +57,22 @@ describe("Verification of dashboard page" , function(){
 	it("Should check activity window present or not" , function(){
 		dashboardPage.likeTweetShare();
 	});
-	
+
 	//Check the text under anchor tag
 	it("Should verify the text under anchor tag" , function(){
 		dashboardPage.verifyAnchor();
 	});
-	
+
 	//Check the text under likes tag
 	it("Should verify the text under anchor tag" , function(){
 		dashboardPage.verifyLike();
 	});
-	
+
 	//Check the text under tweet tag
 	it("Should verify the text under anchor tag" , function(){
 		dashboardPage.verifyTweet();
 	});
-	
+
 	//Check the text under bull horn tag
 	it("Should verify the text under anchor tag" , function(){
 		dashboardPage.verifyBullHorn();
@@ -91,61 +91,19 @@ describe("Verification of dashboard page" , function(){
 	it("Should check retina News Link button present or not" , function(){
 		dashboardPage.retinaNewsLink();
 	});
-	
+
 	//verify the text present under the thursday news link
 	it("Should verify the text present under the thursday news link" , function(){
 		dashboardPage.thursdayNewsLinkContents();
 	});
-	
+
 	//verify the text present under the retina news link
 	it("Should verify the text present under the retina news link" , function(){
 		dashboardPage.retinaNewsLinkContents();
 	});
-	
+
 	//check that thursday news is a link i.e clickable
 	it("Should check that thursday news is a link i.e clickable" , function(){
 		dashboardPage.verifiesNewsURL();
 	});
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-=======
-	it("Should check retina News Link button present or not" , function(){
-		dashboardPage.retinaNewsLink();
-	});
-
-	it("Should check that thursday news is a link i.e clickable" , function(){
-		dashboardPage.verifiesNewsURL();
-
-	});
-});
->>>>>>> 28fa2848e02404e60272d17884ede9e2f8e6011d
