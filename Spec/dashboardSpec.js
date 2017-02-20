@@ -11,22 +11,55 @@ describe("Verification of dashboard page" , function(){
 		//login the user
 		loginPage.verifyForValidCredentials();
 		dashboardPage.dashboardWindows();
-	});	
+	}); 
 
 	//Check for various links are present in the Important Shortcut window or not
-	it("Should check all the links of the Shortcut window" , function(){
+	it("Should check checkApps button present or not" , function(){
 		dashboardPage.checkApps();
+	});
+
+	it("Should check Apps button present or not" , function(){
 		dashboardPage.checkBookmarks(); 
+	});
+
+	it("Should check Reports button present or not" , function(){
 		dashboardPage.checkReports();
-		dashboardPage.checkComments(); 
+	});
+
+	it("Should check Comments button present or not" , function(){
+		dashboardPage.checkComments();
+	});
+
+	it("Should check Users button present or not" , function(){
 		dashboardPage.checkUsers();
+	});
+
+	it("Should check Notes button present or not" , function(){
 		dashboardPage.checkNotes();
+	});
+
+	it("Should check Photos button present or not" , function(){
 		dashboardPage.checkPhotos(); 
+	});
+
+	it("Should check Tags button present or not" , function(){
 		dashboardPage.checkTags();
+	});
+
+	it("Should check activity window present or not" , function(){
 		dashboardPage.likeTweetShare();
+	});
+
+	it("Should check Thursday News Link button present or not" , function(){
 		dashboardPage.thursdayNewsLink();
+	});
+
+	it("Should check retina News Link button present or not" , function(){
 		dashboardPage.retinaNewsLink();
 	});
-	
-	
+
+	it("Should check that thursday news is a link i.e clickable" , function(){
+		dashboardPage.verifiesNewsURL();
+
+	});
 });
