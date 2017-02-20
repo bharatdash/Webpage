@@ -23,7 +23,8 @@ var locators = function(){
 	this.signInButton = element(by.buttonText("Sign In"));
 	this.errorMessage = element(by.xpath("//p[@class='validation-invalid']"));
 	this.errorMessagePassword = element(by.xpath("//p[@class='validation-invalid']"));
-
+	
+	
 	//locators for sign-up page
 	this.signupPage = element(by.xpath("//*[text()='Signup for Free Account']"));
 	this.signupFirstName = element(by.model("signup.firstname"));
@@ -54,7 +55,14 @@ var locators = function(){
 	this.thursdayNews = element(By.linkText("Thursday Roundup # 40"));
 	this.retinaNews = element(By.linkText("Retina Ready Responsive App Landing Page Website Template"));
 	this.customerTable = element(by.xpath("//table[@class='table table-striped table-bordered']//tr[1]"));
-
+	this.thursdayNewsContents = element(by.xpath("//ul[@class='news-items']/li[last()-1]/div[2]/p"));
+	this.retinaNewsContents = element(by.xpath("//ul[@class='news-items']/li[last()]/div[2]/p"));
+	this.anchorTag = element(by.xpath("//div[last()-3][@class='stat']/span"));
+	this.likeTag = element(by.xpath("//div[last()-2][@class='stat']/span"));
+	this.tweetTag = element(by.xpath("//div[last()-1][@class='stat']/span"));
+	this.bullHornTag = element(by.xpath("//div[last()][@class='stat']/span"));
+	
+	
 	//locators for reports page
 	this.reports = element(by.xpath("//a[@ui-sref='reports']"));
 	this.reportsCustomers = element(by.xpath("//div[@class='widget-header']/*[text()=' Customers']"));

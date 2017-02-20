@@ -33,5 +33,12 @@ describe("To test the test-cases for log-in page",function(){
 		loginpage.verifyForValidCredentials();
 		
 	});
+	
+/*	//Test case for login label
+	it("Should verify the login lable" , function(){
+		locator.userName.clear();
+		temp = locator.usernameLabel;
+		expect(temp.getText()).toEqual("Email");
+	});*/
 
 });

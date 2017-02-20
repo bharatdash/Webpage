@@ -19,7 +19,7 @@ this.checkBookmarks = function(){
 };
 
 
-//Function to verify the Roports Icon name
+//Function to verify the Reports Icon name
 this.checkReports = function(){
 	expect(locator.dreports.getText()).toEqual("Reports");
 };
@@ -67,11 +67,39 @@ this.thursdayNewsLink = function(){
 	expect(locator.thursdayNews.getText()).toEqual("Thursday Roundup # 40");
 };
 
+this.thursdayNewsLinkContents = function(){
+	expect(locator.thursdayNewsContents.getText()).toEqual("This is our web design and development news series where we share our favorite design/development related articles, resources, tutorials and awesome freebies.");
+};
+
+this.retinaNewsLinkContents = function(){
+	expect(locator.retinaNewsContents.getText()).toEqual("App Landing is a retina ready responsive app " +
+			"landing page website template perfect for software and application developers and small business" +
+			" owners looking to promote their iPhone, iPad, Android Apps and software products.");
+};
 
 //Function to verify the "Retina Ready Responsive App Landing Page Website Template" link present or not
 this.retinaNewsLink = function(){
 	expect(locator.retinaNews.getText()).toEqual("Retina Ready Responsive App Landing Page Website Template");
 };
+
+
+this.verifyAnchor = function(){
+	expect(locator.anchorTag.getText()).toEqual("851");
+};
+
+this.verifyLike = function(){
+	expect(locator.likeTag.getText()).toEqual("423");
+};
+
+this.verifyTweet = function(){
+	expect(locator.tweetTag.getText()).toEqual("922");
+};
+
+this.verifyBullHorn = function(){
+	expect(locator.bullHornTag.getText()).toEqual("25%");
+};
+
+
 
 
 

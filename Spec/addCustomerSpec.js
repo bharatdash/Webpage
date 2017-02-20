@@ -5,7 +5,7 @@ var addCustomerPage = require("../Pages/addCustomerPage.js");
 
 describe("To check the add customer tab",function(){
 
-	//Opens the web-site
+	//Open the web-site
 	browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
 
 	//Logs-in the user

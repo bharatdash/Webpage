@@ -13,7 +13,6 @@ describe("check security after logout by pressing back button" , function(){
 		headerElements.verifiesLogout();
 
 		//spec for checking the page 
-		//it("Should not go to the home page when back button is pressed after logout " , function(){
 		browser.navigate().back();
 		expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/login");
 	});
