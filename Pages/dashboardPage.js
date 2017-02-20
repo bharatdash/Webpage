@@ -106,12 +106,3 @@ this.verifiesNewsURL = function(){
 	browser.wait(EC.elementToBeClickable(locator.thursdayNews , 3000));
 	browser.wait(EC.elementToBeClickable(locator.retinaNews , 3000));
 };
-
-
-
-
-
-
-
-
-
