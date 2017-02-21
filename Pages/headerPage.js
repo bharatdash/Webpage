@@ -47,21 +47,3 @@ this.clickOnAmasik = function(){
 	expect(browser.getCurrentUrl()).toEqual("http://www.amasik.com/");
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

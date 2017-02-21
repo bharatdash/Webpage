@@ -5,9 +5,11 @@ var headerElements = require("../Pages/headerPage.js");
 
 describe("To test for reports page",function(){
 
-	//Opens the web-site
-	browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+	it("Opens the website",function(){
+		//Opens the web-site
+		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
 
+	});
 	//Logs-in the user
 	it("Should verify for valid credentials",function(){
 		loginpage.verifyForValidCredentials();
@@ -19,9 +21,9 @@ describe("To test for reports page",function(){
 		//Verifies for Customer
 		reports.verifiesCustomersIsPresnet();
 	});
-	
+
 	it("Should check for Orders",function(){
-		
+
 		//Verifies for Orders
 		reports.verifiesOrdersIsPresent();
 

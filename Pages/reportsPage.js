@@ -25,7 +25,15 @@ this.verifiesOrdersIsPresent = function(){
 	//Opens the reports page
 	locators.reports.click();
 
+	browser.sleep(1000);
+	
 	//Checks for Orders tab
 	expect(locators.reportsOrders.getText()).toEqual("Orders");
 
 };
+
+this.opensWebsite = function(){
+	
+	//Gets the URL
+	
+}

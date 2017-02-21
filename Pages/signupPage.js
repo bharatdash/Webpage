@@ -30,7 +30,12 @@ this.verifyWithValidCredentials = function(){
 	locator.signupPassword.sendKeys('bharat');
 	locator.signupConfPassword.sendKeys('bharat');
 	locator.signupButton.click();
+	
+	//Sleep browser for 2 seconds
+	browser.sleep(2000);
+	
 	expect(locator.login.getText()).toEqual("Member Login");
+
 };
 
 //function to click on login if user already exist

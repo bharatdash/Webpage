@@ -3,8 +3,12 @@ var dashboardPage = require('../Pages/dashboardPage.js');
 var loginPage = require('../Pages/loginPage.js');
 //Test for dashboard page
 describe("Verification of dashboard page" , function(){
-	//Opens the web-site before spec
-	browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+	
+	it("Opens the website",function(){
+		//Opens the web-site
+		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+
+	});
 
 	//it block to check all four windows on the dashboard
 	it("Dashboard must contain a window called -Important shortcuts" , function(){
