@@ -19,6 +19,7 @@ this.verifyWithBlankCredentials = function(){
 	locator.signupConfPassword.sendKeys('');
 	locator.signupButton.click();
 	expect(locator.signupErrorMessage.getText()).toContain('First Name is required', 'Last Name is required', 'Email is required', 'Password is required' );
+	expect(locator.signupErrorMessage.getCssValue('color')).toContain("rgba(255, 0, 0, 1)");
 };
 
 //function for giving Valid credentials
@@ -30,7 +31,12 @@ this.verifyWithValidCredentials = function(){
 	locator.signupPassword.sendKeys('bharat');
 	locator.signupConfPassword.sendKeys('bharat');
 	locator.signupButton.click();
+	
+	//Sleep browser for 2 seconds
+	browser.sleep(2000);
+	
 	expect(locator.login.getText()).toEqual("Member Login");
+
 };
 
 //function to click on login if user already exist

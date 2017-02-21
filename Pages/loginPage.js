@@ -62,7 +62,8 @@ this.verifyForValidCredentials = function(){
 
 	//Click on sign-in button
 	locator.signInButton.click();
-
+	
+	browser.sleep(1000);
 	expect(locator.dashboard.getText()).toEqual("Dashboard");
 };
 

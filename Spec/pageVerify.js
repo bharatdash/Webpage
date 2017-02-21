@@ -3,7 +3,11 @@
 describe("Let us test the amasik page" , function(){
 	it("should navigate to the desired page" , function(){
 		//Enter the URL of the page
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+		it("Opens the website",function(){
+			//Opens the web-site
+			browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+
+		});
 		expect(browser.getTitle()).toEqual("AngularJS POC");
 	});
 });

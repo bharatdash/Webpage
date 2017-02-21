@@ -3,7 +3,12 @@ var loginpage = require("../Pages/loginPage.js");
 var headerElements = require("../Pages/headerPage.js");
 
 describe("check security after logout by pressing back button" , function(){
-	browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+	
+	it("Opens the website",function(){
+		//Opens the web-site
+		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+
+	});
 
 	it("Should login , logout and check the link after pressing back button" , function(){
 		//login into the page with valid credentials
@@ -11,6 +16,7 @@ describe("check security after logout by pressing back button" , function(){
 
 		//logout
 		headerElements.verifiesLogout();
+		browser.sleep(1000);
 
 		//spec for checking the page 
 		browser.navigate().back();

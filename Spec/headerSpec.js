@@ -4,8 +4,11 @@ var loginpage = require("../Pages/loginPage.js");
 
 describe("To check the header elements of the webpage",function(){
 	
-	//Opens the web-site
-	browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+	it("Opens the website",function(){
+		//Opens the web-site
+		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+
+	});
 	
 	//Logs-in the user
 	it("Should verify for valid credentials",function(){
