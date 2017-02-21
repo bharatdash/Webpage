@@ -23,8 +23,8 @@ var locators = function(){
 	this.signInButton = element(by.buttonText("Sign In"));
 	this.errorMessage = element(by.xpath("//p[@class='validation-invalid']"));
 	this.errorMessagePassword = element(by.xpath("//p[@class='validation-invalid']"));
-	this.usernameLabel = element(by.xpath("//label[@for='username']"));
-	this.passwordLabel = element(by.xpath("//label[@for='password']"))
+	this.uName = element(by.xpath("//input[@ng-model='login.email']"));
+	this.pwd = element(by.xpath("//input[@ng-model='login.password']"));
 
 	//locators for sign-up page
 	this.signupPage = element(by.xpath("//*[text()='Signup for Free Account']"));

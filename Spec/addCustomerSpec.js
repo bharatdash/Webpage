@@ -13,6 +13,44 @@ describe("To check the add customer tab",function(){
 		loginpage.verifyForValidCredentials();
 
 	});
+	
+	//Test case to click on add customer and verify the page 
+	it("Should navigate to add customer page and validate the page" , function(){
+		//click on add customer
+		locators.addcustomer.click();
+		addCustomerPage.verifyaddCustomer();
+	});
+	
+	
+	//Test case for checking the default label name of First name input field
+	it("Should verify the default label name of First name input field",function(){
+		addCustomerPage.verifyTheLabelsOfFnameField();
+		
+	});
+	
+	//Test case for checking the default label name of last name input field
+	it("Should verify the default label name of last name input field",function(){
+		addCustomerPage.verifyTheLabelsOfLnameField();
+		
+	});
+	
+	//Test case for checking the default label names of Email field
+	it("Should verify the default label names of Email field",function(){
+		addCustomerPage.verifyTheLabelsOfEmailField();
+		
+	});
+	
+	//Test case for checking the default label name of Phone number input field
+	it("Should verify the default label text in password Field",function(){
+		addCustomerPage.verifyTheLabelsOfPhoneField();
+		
+	});
+	
+	//Test case for checking the default label name of bio field
+	it("Should verify the default label text in password Field",function(){
+		addCustomerPage.verifyTheLabelsOfBioField();
+		
+	});
 
 	it("Checks for the mandatory fields",function(){
 
@@ -41,4 +79,6 @@ describe("To check the add customer tab",function(){
 		headerElements.isOnlyForElements();
 
 	});
+	
+	
 });	

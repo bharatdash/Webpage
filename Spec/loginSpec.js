@@ -52,4 +52,9 @@ describe("To test the test-cases for log-in page",function(){
 		loginpage.verifyTheLabelsOfTextField();
 		
 	});
+	
+	it("Should verify the default label text in password Field",function(){
+		loginpage.verifyTheLabelsOfPasswordField();
+		
+	});
 });

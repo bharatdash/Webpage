@@ -76,18 +76,16 @@ this.verifyTheColorOfErrorMessage = function(){
 };
 
 this.verifyTheLabelsOfTextField = function(){
-
-	//clears the email-id field
-	locator.userName.clear();
-
-	//Clears the password field
-	locator.password.clear();
-
-	locator.usernameLabel.getAttribute('label').then(function(element){
+	//verifies the label of email input box
+	locator.uName.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("Email");
 	});
+};
 
-	expect(locator.usernameLabel.getText()).toEqual("Email");
-	expect(locator.passwordLabel.getText()).toEqual("Password:");
 
+this.verifyTheLabelsOfPasswordField = function(){
+	//Verifies the label of password box
+	locator.pwd.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("Password");
+	});
 };
