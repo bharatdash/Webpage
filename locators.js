@@ -69,6 +69,7 @@ var locators = function(){
 	this.reportsCustomers = element(by.xpath("//div[@class='widget-header']/*[text()=' Customers']"));
 	this.reportsOrders = element(by.xpath("//div[@class='widget-header']/*[text()=' Orders']"));
 	this.ordersGraph = element(by.xpath("//canvas[@id='bar']"));
+	this.customersGraph = element(by.xpath("//canvas[@id='line']"));
 
 	//Locators of Customer tab
 	this.customers = element(by.xpath("//*[@class='icon-facetime-video']/following-sibling::span[1]"));

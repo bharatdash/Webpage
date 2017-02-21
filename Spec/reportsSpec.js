@@ -36,9 +36,16 @@ describe("To test for reports page",function(){
 
 	});
 	
-	it("Checks for mouse over",function(){
+	it("Checks for mouse over in line graph",function(){
 		
-		reports.checksForMouseOver();
+		reports.checksForMouseOverInLineGraph();
+	
+	});
+	
+	
+	it("Checks for mouse over in bar graph",function(){
+		
+		reports.checksForMouseOverInBarGraph();
 		
 	});
 	
