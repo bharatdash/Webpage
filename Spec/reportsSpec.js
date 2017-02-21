@@ -35,4 +35,11 @@ describe("To test for reports page",function(){
 		headerElements.isOnlyForElements();
 
 	});
+	
+	it("Checks for mouse over",function(){
+		
+		reports.checksForMouseOver();
+		
+	});
+	
 });

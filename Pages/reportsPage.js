@@ -32,8 +32,11 @@ this.verifiesOrdersIsPresent = function(){
 
 };
 
-this.opensWebsite = function(){
+this.checksForMouseOver = function(){
 	
-	//Gets the URL
+	locators.ordersGraph.getAttribute('data').then(function(dta){
+		console.log(dta);
+		
+	});
 	
-}
+};
