@@ -14,6 +14,8 @@ this.verifiesCustomersIsPresnet = function(){
 
 	//Opens the reports page
 	locators.reports.click();
+	
+	browser.sleep(1000);
 
 	//Checks for customers tab
 	expect(locators.reportsCustomers.getText()).toEqual("Customers");

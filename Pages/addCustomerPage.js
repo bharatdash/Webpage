@@ -54,9 +54,10 @@ this.forMandatoryFields = function(){
 	locator.save_button.click();
 	expect(locator.error_message.getText()).toContain('First Name is required', 'Last Name is required', 'Email is required', 'Phone is required', 'Country is required');
 
-	locators.save_button.click();
-	expect(locators.error_message.getText()).toContain('First Name is required', 'Last Name is required', 'Email is required', 'Phone is required', 'Country is required');
-	expect(locators.error_message.getCssValue('color')).toContain("rgba(255, 0, 0, 1)");
+	locator.save_button.click();
+	expect(locator.error_message.getText()).toContain('First Name is required', 'Last Name is required', 'Email is required', 'Phone is required', 'Country is required');
+	expect(locator.error_message.getCssValue('color')).toContain("rgba(255, 0, 0, 1)");
+
 };
 
 
