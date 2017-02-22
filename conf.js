@@ -13,7 +13,7 @@ exports.config = {
 			browser.manage().window().maximize();
 			jasmine.getEnv().addReporter(
 					new Jasmine2HtmlReporter({
-						savePath: 'target/screenshots'
+						savePath: 'reports/screenshots'
 					})
 			);
 		}
