@@ -47,3 +47,7 @@ this.clickOnAmasik = function(){
 	expect(browser.getCurrentUrl()).toEqual("http://www.amasik.com/");
 };
 
+this.verifesSearchBar = function(){
+	expect(element(by.xpath("//input[@class='search-query']")).isPresent()).toBe(true);
+	
+};

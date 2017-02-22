@@ -11,46 +11,71 @@ this.dashboardWindows = function(){
 //Function to verify the Apps icon name
 this.checkApps = function(){
 	expect(locator.dapps.getText()).toEqual("Apps");
+	locator.dapps.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	
+	});
 };
 
 //Function to verify the Bookmarks Icon name
 this.checkBookmarks = function(){
 	expect(locator.dbookmarks.getText()).toEqual("Bookmarks");
+	locator.dbookmarks.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 
 //Function to verify the Reports Icon name
 this.checkReports = function(){
 	expect(locator.dreports.getText()).toEqual("Reports");
+	locator.dreports.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 
 //Function to verify the Comments Icon name
 this.checkComments = function(){
 	expect(locator.dcomments.getText()).toEqual("Comments");
+	locator.dcomments.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 
 //Function to verify the Users icon name
 this.checkUsers = function(){
 	expect(locator.dusers.getText()).toEqual("Users");
+	locator.dusers.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 
 //Function to verify the Notes Icons name
 this.checkNotes = function(){
 	expect(locator.dnotes.getText()).toEqual("Notes");
+	locator.dnotes.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 //Function to verify the Photos Icon name
 this.checkPhotos = function(){
 	expect(locator.dphotos.getText()).toEqual("Photos");
+	locator.dphotos.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 
 //Function to verify the Tags Icon name
 this.checkTags = function(){
 	expect(locator.dtags.getText()).toEqual("Tags");
+	locator.dtags.getCssValue('font-size').then(function(size){
+		expect(size).toBe('13px')
+	});
 };
 
 //Function to verify the number of activies present inside stats window
@@ -74,7 +99,7 @@ this.thursdayNewsLinkContents = function(){
 this.retinaNewsLinkContents = function(){
 	expect(locator.retinaNewsContents.getText()).toEqual("App Landing is a retina ready responsive app " +
 			"landing page website template perfect for software and application developers and small business" +
-			" owners looking to promote their iPhone, iPad, Android Apps and software products.");
+	" owners looking to promote their iPhone, iPad, Android Apps and software products.");
 };
 
 //Function to verify the "Retina Ready Responsive App Landing Page Website Template" link present or not

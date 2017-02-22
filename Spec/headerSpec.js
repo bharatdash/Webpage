@@ -26,6 +26,11 @@ describe("To check the header elements of the webpage",function(){
 		headerElements.isOnlyForElements();
 	});	
 		
+	it("Should verify that search bar is present",function(){
+		headerElements.verifesSearchBar();
+		
+	});
+	
 	it("Should verify the log-out function",function(){
 		
 		//Logs-out the user
@@ -36,4 +41,6 @@ describe("To check the header elements of the webpage",function(){
 		//click amasik.com and verify the link
 		headerElements.clickOnAmasik();
 	});
+	
+	
 });

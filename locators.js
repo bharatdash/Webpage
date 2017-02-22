@@ -10,7 +10,7 @@ var locators = function(){
 	this.profile = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
 	this.logout = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
 	this.amasik = element(by.xpath("//div[@class='span12']/a"));
-
+	
 	//locators of home-page
 	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.signUp = element(by.xpath("//a[@data-ui-sref='signup']"));
@@ -114,7 +114,7 @@ var locators = function(){
 	this.aus = element(by.xpath("//select[@ng-model='customer.country']/option[@value='Australia']"));
 	this.save_button= element(by.xpath("//button[@class='btn btn-primary']"));
 	this.cancel_button = element(by.xpath("//button[@class='btn']"));
-
+	
 	//locators for others drop-down menu
 	this.others = element(by.xpath("//*[text()='Others']"));
 	this.other1 = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));

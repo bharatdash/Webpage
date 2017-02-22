@@ -42,6 +42,7 @@ this.verifyWithValidCredentials = function(){
 //function to click on login if user already exist
 
 this.existingUser = function(){
+	locator.signUp.click();
 	locator.loginToYourAccount.click();
 };
 
@@ -50,3 +51,27 @@ this.verifyLoginPage = function(){
 	expect(locator.login.getText()).toEqual("Member Login");
 };
 
+this.verifyForLabels = function(){
+	locator.signUp.click();
+	
+	locator.signupFirstName.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("First Name");
+	});
+	
+	locator.signupLastName.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("Last Name");
+	});
+	
+	locator.signupEmail.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("Email");
+	});
+	
+	locator.signupPassword.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("Password");
+	});
+	
+	locator.signupConfPassword.getAttribute('placeholder').then(function(element){
+		expect(element).toEqual("Confirm Password");
+	});
+	
+};
