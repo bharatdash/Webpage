@@ -1,12 +1,12 @@
 var locator = require('../locators.js');
 var loginpage = require("../Pages/loginPage.js");
+var openPage = require('../Pages/basePage.js');
 
 describe("To test the test-cases for log-in page",function(){
 
 	beforeEach (function(){
 
-		//Opens the web-site before every spec
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
+		openPage.opensPageAndVerifies();
 
 	});
 

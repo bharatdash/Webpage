@@ -2,14 +2,15 @@ var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 var reports = require("../Pages/reportsPage.js");
 var headerElements = require("../Pages/headerPage.js");
+var openPage = require('../Pages/basePage.js');
 
 describe("To test for reports page",function(){
 
-	it("Opens the website",function(){
-		//Opens the web-site
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
-
+	it("Opens the app and verifies",function(){
+		openPage.opensPageAndVerifies();
+	
 	});
+
 	//Logs-in the user
 	it("Should verify for valid credentials",function(){
 		loginpage.verifyForValidCredentials();

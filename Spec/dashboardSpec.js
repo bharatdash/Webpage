@@ -1,13 +1,14 @@
 var locator = require('../locators.js');
 var dashboardPage = require('../Pages/dashboardPage.js');
 var loginPage = require('../Pages/loginPage.js');
+var openPage = require('../Pages/basePage.js');
+
 //Test for dashboard page
 describe("Verification of dashboard page" , function(){
 	
-	it("Opens the website",function(){
-		//Opens the web-site
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
-
+	it("Opens the app and verifies",function(){
+		openPage.opensPageAndVerifies();
+	
 	});
 
 	//it block to check all four windows on the dashboard
