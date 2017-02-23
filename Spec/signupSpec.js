@@ -1,13 +1,14 @@
 var locator = require('../locators.js');
 var signupPage = require('../Pages/signupPage.js');
+var openPage = require('../Pages/basePage.js');
 
 describe("Create a new account" , function(){
 
-	it("Opens the website",function(){
-		//Opens the web-site
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
-		
+	it("Opens the app and verifies",function(){
+		openPage.opensPageAndVerifies();
+	
 	});
+
 
 	//1.It block to click on Don't have an account?
 	it("should navigate to the desired page" , function(){

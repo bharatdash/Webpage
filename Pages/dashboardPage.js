@@ -2,6 +2,7 @@ var locator = require('../locators.js');
 var loginPage = require('../Pages/loginPage.js');
 //function to Verify all the windows on the page
 this.dashboardWindows = function(){
+	loginPage.verifyForValidCredentials();
 	expect(locator.dImportantShorcuts.getText()).toEqual("Important Shortcuts");
 	expect(locator.dstats.getText()).toEqual("Today's Stats");
 	expect(locator.dRecentNews.getText()).toEqual("Recent News");

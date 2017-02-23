@@ -4,6 +4,7 @@ var loginpage = require("../Pages/loginPage.js");
 
 this.verifyaddCustomer = function(){
 	//verifies addCustomer page title
+	locators.addcustomer.click();
 	expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/addCustomer");
 };
 

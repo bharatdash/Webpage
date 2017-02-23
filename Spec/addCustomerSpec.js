@@ -2,14 +2,15 @@ var locators = require("../locators.js");
 var headerElements = require("../Pages/headerPage.js");
 var loginpage = require("../Pages/loginPage.js");
 var addCustomerPage = require("../Pages/addCustomerPage.js");
+var openPage = require('../Pages/basePage.js');
 
 describe("To check the add customer tab",function(){
 
-	it("Opens the website",function(){
-		//Opens the web-site
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
-
+	it("Opens the app and verifies",function(){
+		openPage.opensPageAndVerifies();
+	
 	});
+
 	
 	//Logs-in the user
 	it("Should verify for valid credentials",function(){
@@ -20,7 +21,6 @@ describe("To check the add customer tab",function(){
 	//Test case to click on add customer and verify the page 
 	it("Should navigate to add customer page and validate the page" , function(){
 		//click on add customer
-		locators.addcustomer.click();
 		addCustomerPage.verifyaddCustomer();
 	});
 	
