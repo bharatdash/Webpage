@@ -31,10 +31,10 @@ this.verifyWithValidCredentials = function(){
 	locator.signupPassword.sendKeys('bharat');
 	locator.signupConfPassword.sendKeys('bharat');
 	locator.signupButton.click();
-	
+
 	//Sleep browser for 2 seconds
 	browser.sleep(2000);
-	
+
 	expect(locator.login.getText()).toEqual("Member Login");
 
 };
@@ -48,30 +48,31 @@ this.existingUser = function(){
 
 //function to verify that only the login page is opening 
 this.verifyLoginPage = function(){
-	expect(locator.login.getText()).toEqual("Member Login");
+	browser.sleep(1000);
+		expect(locator.login.getText()).toEqual("Member Login");
 };
 
 this.verifyForLabels = function(){
 	locator.signUp.click();
-	
+
 	locator.signupFirstName.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("First Name");
 	});
-	
+
 	locator.signupLastName.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("Last Name");
 	});
-	
+
 	locator.signupEmail.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("Email");
 	});
-	
+
 	locator.signupPassword.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("Password");
 	});
-	
+
 	locator.signupConfPassword.getAttribute('placeholder').then(function(element){
 		expect(element).toEqual("Confirm Password");
 	});
-	
+
 };

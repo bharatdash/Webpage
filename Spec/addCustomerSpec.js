@@ -19,8 +19,6 @@ describe("To check the add customer tab",function(){
 	
 	//Test case to click on add customer and verify the page 
 	it("Should navigate to add customer page and validate the page" , function(){
-		//click on add customer
-		locators.addcustomer.click();
 		addCustomerPage.verifyaddCustomer();
 	});
 	

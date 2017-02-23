@@ -12,8 +12,6 @@ describe("Verification of dashboard page" , function(){
 
 	//it block to check all four windows on the dashboard
 	it("Dashboard must contain a window called -Important shortcuts" , function(){
-		//login the user
-		loginPage.verifyForValidCredentials();
 		dashboardPage.dashboardWindows();
 	}); 
 

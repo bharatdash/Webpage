@@ -3,7 +3,7 @@ var loginpage = require("../Pages/loginPage.js");
 var headerElements = require("../Pages/headerPage.js");
 
 describe("check security after logout by pressing back button" , function(){
-	
+
 	it("Opens the website",function(){
 		//Opens the web-site
 		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
@@ -13,11 +13,14 @@ describe("check security after logout by pressing back button" , function(){
 	it("Should login , logout and check the link after pressing back button" , function(){
 		//login into the page with valid credentials
 		loginpage.verifyForValidCredentials();
+	});
 
+	it("Should logout form the current user profile" , function(){	
 		//logout
 		headerElements.verifiesLogout();
-		browser.sleep(1000);
+	});
 
+	it("Should check the link after clicking after clicking back button" , function(){	
 		//spec for checking the page 
 		browser.navigate().back();
 		expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/login");

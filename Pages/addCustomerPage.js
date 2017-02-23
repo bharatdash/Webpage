@@ -3,6 +3,8 @@ var loginpage = require("../Pages/loginPage.js");
 
 
 this.verifyaddCustomer = function(){
+	//click on add customer
+	locator.addcustomer.click();
 	//verifies addCustomer page title
 	expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/addCustomer");
 };

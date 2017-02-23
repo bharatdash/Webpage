@@ -17,10 +17,6 @@ describe("To check the header elements of the webpage",function(){
 	});
 	
 	it("Should verify that all elements are present",function(){
-				
-		
-		//Pause the browser so that the user can sign in
-		browser.sleep(1000);
 		
 		//Verifies all the header elements
 		headerElements.isOnlyForElements();

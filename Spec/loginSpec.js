@@ -41,13 +41,6 @@ describe("To test the test-cases for log-in page",function(){
 
 	});
 
-	/*	//Test case for login label
-	it("Should verify the login lable" , function(){
-		locator.userName.clear();
-		temp = locator.usernameLabel;
-		expect(temp.getText()).toEqual("Email");
-	});*/
-
 	//Test case for checking the color of the error message
 	it("Should verify that the error message is in red colour",function(){
 		loginpage.verifyTheColorOfErrorMessage();
