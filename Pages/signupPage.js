@@ -7,6 +7,7 @@ this.clickOnDontHaveAnAccount = function(){
 
 //Function for verifying signup page
 this.verifySignupPage = function(){
+	browser.sleep(2000);
 	expect(locator.signupPage.getText()).toEqual("Signup for Free Account");
 };	
 
