@@ -1,5 +1,6 @@
 var locators = require("../locators.js");
 
+//Function to verify the report button
 this.verifiesReportButtonIsWorking = function(){
 
 	//Opens the reports page
@@ -10,7 +11,8 @@ this.verifiesReportButtonIsWorking = function(){
 
 };
 
-this.verifiesCustomersIsPresnet = function(){
+//Function to verify the customer is present or not
+this.verifiesCustomersIsPresent = function(){
 
 	//Opens the reports page
 	locators.reports.click();
@@ -22,6 +24,7 @@ this.verifiesCustomersIsPresnet = function(){
 
 };
 
+//Function to verify the orders graph is present or not
 this.verifiesOrdersIsPresent = function(){
 
 	//Opens the reports page
@@ -34,6 +37,7 @@ this.verifiesOrdersIsPresent = function(){
 
 };
 
+//Function to verify data points on line graph
 this.checksForMouseOverInLineGraph = function(){
 
 	locators.customersGraph.evaluate("data.labels").then(function (span) {
@@ -46,8 +50,10 @@ this.checksForMouseOverInLineGraph = function(){
 				  [ 28, 48, 40, 19, 86, 27, 90 ]);
 
 	});
+	
 };
 
+//Function to verify data points on Bar graph
 this.checksForMouseOverInBarGraph = function(){
 
 	locators.ordersGraph.evaluate("data.labels").then(function (span) {
@@ -60,4 +66,5 @@ this.checksForMouseOverInBarGraph = function(){
 				  [ 28, 48, 40, 19, 86, 27, 90 ]);
 
 	});
+	
 };

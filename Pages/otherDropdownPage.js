@@ -13,4 +13,4 @@ this.verifiesAllOptions = function(){
 	expect(locators.other5.getText()).toContain("Signup");
 	expect(locators.other6.getText()).toContain("404");
 	
-}
+};

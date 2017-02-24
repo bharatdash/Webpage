@@ -1,5 +1,6 @@
 var locator = require('../locators.js');
 
+//Function to verify for invalid Email
 this.verifyForInvalidEmail = function(){
 
 	//Enters blank E-mail id
@@ -15,6 +16,7 @@ this.verifyForInvalidEmail = function(){
 
 };
 
+//Function to verify for Empty Password
 this.verfiyForEmptyPassword = function(){
 
 	//Clears the password field
@@ -28,6 +30,7 @@ this.verfiyForEmptyPassword = function(){
 
 };
 
+//Function to verify for Empty Email
 this.verifyForEmptyEmail = function(){
 
 	//clears the email-id field
@@ -41,6 +44,7 @@ this.verifyForEmptyEmail = function(){
 
 };
 
+//Function to verify for Empty Email and Password (both)
 this.verifyForBothFieldsEmpty = function(){
 
 	//clears the email-id field
@@ -54,8 +58,10 @@ this.verifyForBothFieldsEmpty = function(){
 
 	//Verifies user is not logged in
 	expect(locator.errorMessage).not.toEqual('welcome');
+	
 };
 
+//Function to verify for valid credential
 this.verifyForValidCredentials = function(){
 
 	//E-mail id and password are already entered
@@ -65,8 +71,10 @@ this.verifyForValidCredentials = function(){
 	
 	browser.sleep(1000);
 	expect(locator.dashboard.getText()).toEqual("Dashboard");
+	
 };
 
+//Function to verify the color of error message 
 this.verifyTheColorOfErrorMessage = function(){
 
 	//clears the email-id field
@@ -76,17 +84,26 @@ this.verifyTheColorOfErrorMessage = function(){
 
 };
 
+//Function to verify Label of Input field Email
 this.verifyTheLabelsOfTextField = function(){
+	
 	//verifies the label of email input box
 	locator.uName.getAttribute('placeholder').then(function(element){
+		
 		expect(element).toEqual("Email");
+		
 	});
+	
 };
 
-
+//Function to verify Label of Input field Password
 this.verifyTheLabelsOfPasswordField = function(){
+	
 	//Verifies the label of password box
 	locator.pwd.getAttribute('placeholder').then(function(element){
+		
 		expect(element).toEqual("Password");
+		
 	});
+	
 };
