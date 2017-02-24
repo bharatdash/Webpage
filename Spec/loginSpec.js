@@ -2,11 +2,12 @@ var locator = require('../locators.js');
 var loginpage = require("../Pages/loginPage.js");
 var openPage = require('../Pages/basePage.js');
 
-//Test Suit for login page
+
 describe("To test the test-cases for log-in page",function(){
 
 	beforeEach (function(){
-
+		
+		//Test Suit for login page
 		openPage.opensPageAndVerifies();
 
 	});
