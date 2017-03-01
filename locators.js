@@ -1,7 +1,6 @@
 var locators = function(){
 
 	//header locators
-
 	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.searchBar = element(by.xpath("//input[@class='search-query']"));
 	this.accounts = element(by.xpath("//li[@class='dropdown open']/child::a[1]"));
