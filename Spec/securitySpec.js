@@ -1,10 +1,9 @@
-var locator = require('../locators.js');
 var loginpage = require("../Pages/loginPage.js");
 var headerElements = require("../Pages/headerPage.js");
 var openPage = require('../Pages/basePage.js');
 
 //Test Suit for security function
-describe("check security after logout by pressing back button" , function(){
+describe("check security, after logout, by pressing back button" , function(){
 
 	it("Opens the app and verifies",function(){
 

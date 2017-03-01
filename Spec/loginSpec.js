@@ -1,4 +1,3 @@
-var locator = require('../locators.js');
 var loginpage = require("../Pages/loginPage.js");
 var openPage = require('../Pages/basePage.js');
 
@@ -9,13 +8,6 @@ describe("To test the test-cases for log-in page",function(){
 		
 		//Test Suit for login page
 		openPage.opensPageAndVerifies();
-
-	});
-
-	afterEach (function(){
-
-		//Logs out the user everytime
-		browser.get("http://amasik.com/demo/angularjs/angular-app/#/login");
 
 	});
 

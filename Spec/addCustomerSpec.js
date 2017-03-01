@@ -1,6 +1,5 @@
-var locators = require("../locators.js");
 var headerElements = require("../Pages/headerPage.js");
-var loginpage = require("../Pages/loginPage.js");
+var loginPage = require("../Pages/loginPage.js");
 var addCustomerPage = require("../Pages/addCustomerPage.js");
 var openPage = require('../Pages/basePage.js');
 
@@ -16,14 +15,14 @@ describe("To check the add customer tab",function(){
 	//Logs-in the user
 	it("Should verify for valid credentials",function(){
 		
-		loginpage.verifyForValidCredentials();
+		loginPage.verifyForValidCredentials();
 
 	});
 	
 	//Test case to click on add customer and verify the page 
 	it("Should navigate to add customer page and validate the page" , function(){
 		
-		addCustomerPage.verifyaddCustomer();
+		addCustomerPage.verifyAddCustomer();
 		
 	});
 	
@@ -62,15 +61,15 @@ describe("To check the add customer tab",function(){
 		
 	});
 
-	//Test case for checking the mandatory fields
+	//Test case for checking the mandatory fields(Give nothing into the text fields and press save)
 	it("Checks for the mandatory fields",function(){
 
 		addCustomerPage.forMandatoryFields();
 
 	});
 
-	//Test case to check for valid email id
-	it("Checks for valid E-mail id",function(){
+	//Test case to check for invalid email id (Others are not verifying anything)
+	it("Checks for invalid E-mail id",function(){
 
 		addCustomerPage.verifiesForEmail();
 

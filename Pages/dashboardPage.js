@@ -15,7 +15,7 @@ this.dashboardWindows = function(){
 
 };
 
-//Function to verify the Apps icon name
+//Function to verify the Apps icon and it's name
 this.checkApps = function(){
 	
 	expect(locator.dapps.getText()).toEqual("Apps");
@@ -27,7 +27,7 @@ this.checkApps = function(){
 	
 };
 
-//Function to verify the Bookmarks Icon name
+//Function to verify the Bookmarks Icon and it's name
 this.checkBookmarks = function(){
 	
 	expect(locator.dbookmarks.getText()).toEqual("Bookmarks");
@@ -40,7 +40,7 @@ this.checkBookmarks = function(){
 };
 
 
-//Function to verify the Reports Icon name
+//Function to verify the Reports and it's Icon name
 this.checkReports = function(){
 	
 	expect(locator.dreports.getText()).toEqual("Reports");
@@ -53,7 +53,7 @@ this.checkReports = function(){
 };
 
 
-//Function to verify the Comments Icon name
+//Function to verify the Comments Icon and it's name
 this.checkComments = function(){
 	
 	expect(locator.dcomments.getText()).toEqual("Comments");
@@ -66,7 +66,7 @@ this.checkComments = function(){
 };
 
 
-//Function to verify the Users icon name
+//Function to verify the Users icon and it's name
 this.checkUsers = function(){
 	
 	expect(locator.dusers.getText()).toEqual("Users");
@@ -79,7 +79,7 @@ this.checkUsers = function(){
 };
 
 
-//Function to verify the Notes Icons name
+//Function to verify the Notes Icons and it's name
 this.checkNotes = function(){
 	
 	expect(locator.dnotes.getText()).toEqual("Notes");
@@ -91,7 +91,7 @@ this.checkNotes = function(){
 	
 };
 
-//Function to verify the Photos Icon name
+//Function to verify the Photos Icon and it's name
 this.checkPhotos = function(){
 	
 	expect(locator.dphotos.getText()).toEqual("Photos");
@@ -104,7 +104,7 @@ this.checkPhotos = function(){
 };
 
 
-//Function to verify the Tags Icon name
+//Function to verify the Tags Icon and it's name
 this.checkTags = function(){
 	
 	expect(locator.dtags.getText()).toEqual("Tags");
@@ -116,7 +116,7 @@ this.checkTags = function(){
 	
 };
 
-//Function to verify the number of activies present inside stats window
+//Function to verify the number of activities present inside stats window
 this.likeTweetShare = function(){
 	
 	locator.activities.getText().then(function(count){

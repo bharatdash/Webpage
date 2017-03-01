@@ -1,4 +1,3 @@
-var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 var reports = require("../Pages/reportsPage.js");
 var headerElements = require("../Pages/headerPage.js");

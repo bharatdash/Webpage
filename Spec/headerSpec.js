@@ -1,4 +1,3 @@
-var locators = require("../locators.js");
 var headerElements = require("../Pages/headerPage.js");
 var loginpage = require("../Pages/loginPage.js");
 var openPage = require('../Pages/basePage.js');
@@ -20,7 +19,7 @@ describe("To check the header elements of the webpage",function(){
 
 	});
 
-	//Verifies all the header elements
+	//Verifies all the header elements except for logout
 	it("Should verify that all elements are present",function(){
 
 		headerElements.isOnlyForElements();

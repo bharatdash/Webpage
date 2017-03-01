@@ -1,8 +1,7 @@
-var locator = require('../locators.js');
 var signupPage = require('../Pages/signupPage.js');
 var openPage = require('../Pages/basePage.js');
 
-//Test Suit for Signup
+//Test Suit for Sign up
 describe("Create a new account" , function(){
 	
 	//It block to open the page and verify the page
@@ -25,18 +24,18 @@ describe("Create a new account" , function(){
 		signupPage.verifySignupPage();
 
 	});	
+	
+	//Verifies the label of the respective text fields
+	it("Should verify labels",function(){
+
+		signupPage.verifyForLabels();
+
+	});
 
 	//When all the fields are left as blank
 	it("Should not register the user" , function(){
 
 		signupPage.verifyWithBlankCredentials();
-
-	});
-
-	//Verifies the label of the respective text fields
-	it("Should verify labels",function(){
-
-		signupPage.verifyForLabels();
 
 	});
 

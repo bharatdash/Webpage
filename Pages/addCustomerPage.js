@@ -2,7 +2,7 @@ var locator = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 
 //Function to click on add customer tab and 
-this.verifyaddCustomer = function(){
+this.verifyAddCustomer = function(){
 
 	//click on add customer
 	locator.addcustomer.click();
@@ -114,10 +114,6 @@ this.verifiesCancelButtonRedirectsBack = function(){
 
 	//Opens add customer tab
 	locator.addcustomer.click();
-
-	//Fills all the fields
-	locator.add_firstname.sendKeys("Abdul");
-	locator.add_lastname.sendKeys("Kalam");
 
 	//Clicks the cancel button
 	locator.cancel_button.click();

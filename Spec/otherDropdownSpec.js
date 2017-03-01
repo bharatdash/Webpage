@@ -1,4 +1,3 @@
-var locators = require("../locators.js");
 var loginpage = require("../Pages/loginPage.js");
 var others = require("../Pages/otherDropdownPage.js");
 var openPage = require('../Pages/basePage.js');
@@ -20,7 +19,7 @@ describe("To check the add customer tab",function(){
 
 	});
 
-	//check every option in others dropd-down menu
+	//check every option in others drop down menu
 	it("Should check every option in others dropd-down menu",function(){
 		
 		//Matches all options

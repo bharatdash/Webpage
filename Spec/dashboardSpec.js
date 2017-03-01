@@ -1,4 +1,3 @@
-var locator = require('../locators.js');
 var dashboardPage = require('../Pages/dashboardPage.js');
 var loginPage = require('../Pages/loginPage.js');
 var openPage = require('../Pages/basePage.js');
@@ -13,21 +12,21 @@ describe("Verification of dashboard page" , function(){
 
 	});
 
-	//it block to check all four windows on the Dash board
+	//Check names of all four windows on the Dash board
 	it("Dashboard must contain a window called -Important shortcuts" , function(){
 
 		dashboardPage.dashboardWindows();
 
 	}); 
 
-	//Check for various links are present in the Important Shortcut window or not
+	//Check "Apps" is present in the "Important Shortcut" window 
 	it("Should check checkApps button present or not" , function(){
 
 		dashboardPage.checkApps();
 
 	});
 
-	//check Apps button present or not
+	//check Bookmark button present or not
 	it("Should check Apps button present or not" , function(){
 
 		dashboardPage.checkBookmarks(); 

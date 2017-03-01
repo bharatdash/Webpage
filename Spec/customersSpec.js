@@ -1,4 +1,3 @@
-var locator = require('../locators.js');
 var loginPage = require('../Pages/loginPage.js');
 var customerPage = require('../Pages/customersPage.js');
 var openPage = require('../Pages/basePage.js');
@@ -35,7 +34,7 @@ describe("Verification of Customer page" , function(){
 
 	});
 
-	//It block to sort the records of the customer table
+	//It block to sort the records of the customer table and check the label as well
 	it("Should sort by first name" , function(){
 
 		customerPage.sortByFname();

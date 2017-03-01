@@ -99,7 +99,12 @@ var locators = function(){
 	this.view_details = element.all(by.xpath("//div[@class='control-group']"));
 	this.viewButton = element(by.buttonText('View'));
 	this.view_name = element(by.xpath("//div[@class = 'controls ng-binding']"));
-
+	this.first_fname_record = element(by.xpath("//tbody/tr[1]/td[1]"));
+	this.first_lname_record = element(by.xpath("//tbody/tr[1]/td[2]"));
+	this.first_email_record = element(by.xpath("//tbody/tr[1]/td[3]"));
+	this.first_phone_record = element(by.xpath("//tbody/tr[1]/td[4]"));
+	this.first_country_record = element(by.xpath("//tbody/tr[1]/td[5]"));
+	
 	//locators of Add customers tab
 	this.addcustomer= element(by.xpath("//i[@class='icon-bar-chart']"));
 	this.add_firstname = element(by.xpath("//input[@name='firstname']"));

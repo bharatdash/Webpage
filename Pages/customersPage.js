@@ -19,12 +19,18 @@ this.sortByFname = function(){
 
 	expect(locator.sort_by_firstname.getText()).toEqual("FIRST NAME");
 
+	locator.sort_by_firstname.click();
+	expect(locator.first_fname_record.getText()).toEqual("Williams");
+	
 };
 
 //Function to sort by last name
 this.sortByLname = function(){
 
 	expect(locator.sort_by_lastname.getText()).toEqual("LAST NAME");
+	
+	locator.sort_by_lastname.click();
+	expect(locator.first_lname_record.getText()).toEqual("Vikram");
 
 };
 
@@ -32,6 +38,9 @@ this.sortByLname = function(){
 this.sortByEmail = function(){
 
 	expect(locator.sort_by_email.getText()).toEqual("EMAIL");
+	
+	locator.sort_by_email.click();
+	expect(locator.first_email_record.getText()).toEqual("Williams@gmail.com");
 
 };
 
@@ -40,12 +49,18 @@ this.sortByPhone = function(){
 
 	expect(locator.sort_by_phone.getText()).toEqual("PHONE");
 
+	locator.sort_by_phone.click();
+	expect(locator.first_phone_record.getText()).toEqual("(777)-888-99994");
+	
 };
 
 //Function to sort by Country name
 this.sortByCountry = function(){
 	
 	expect(locator.sort_by_country.getText()).toEqual("COUNTRY");
+	
+	locator.sort_by_country.click();
+	expect(locator.first_country_record.getText()).toEqual("United States");
 	
 };
 
@@ -142,9 +157,9 @@ this.pageOne = function(){
 
 //Function to check on view tab after clicking the view button
 this.viewTab = function(){
-
+	browser.sleep(2000);
 	locator.search_by_firstname.sendKeys("John");
-	var name = locator.first_row.getText();
+	var name = locator.first_fname_record.getText();
 	locator.viewButton.click();
 	locator.view_tab.click();
 	var viewName = locator.view_name.getText();
