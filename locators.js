@@ -1,7 +1,8 @@
 var locators = function(){
 
 	//header locators
-	this.heading2 = element(by.xpath("//a[@class='brand']"));
+
+	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.searchBar = element(by.xpath("//input[@class='search-query']"));
 	this.accounts = element(by.xpath("//li[@class='dropdown open']/child::a[1]"));
 	this.settings = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
@@ -9,10 +10,9 @@ var locators = function(){
 	this.userIcon = element(by.xpath("//i[@class='icon-user']"));
 	this.profile = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[1]"));
 	this.logout = element(by.xpath("//li[@class='dropdown open']/child::ul[1]/li[2]"));
-	this.blog = element(by.xpath("//div[@class='span12']/a"));
+	this.amasik = element(by.xpath("//div[@class='span12']/a"));
 	
 	//locators of home-page
-	this.heading = element(by.xpath("//a[@class='brand']"));
 	this.signUp = element(by.xpath("//a[@data-ui-sref='signup']"));
 	this.login = element(by.xpath("//form//*[text()='Member Login']"));
 	this.helpHome = element(by.xpath("//i[@class='icon-chevron-left']"));
