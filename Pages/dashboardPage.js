@@ -21,7 +21,7 @@ this.checkApps = function(){
 	expect(locator.dapps.getText()).toEqual("Apps");
 	locator.dapps.getCssValue('font-size').then(function(size){
 		
-		expect(size).toBe('13px')
+		expect(size).toBe('13px');
 	
 	});
 	
@@ -33,7 +33,7 @@ this.checkBookmarks = function(){
 	expect(locator.dbookmarks.getText()).toEqual("Bookmarks");
 	locator.dbookmarks.getCssValue('font-size').then(function(size){
 		
-		expect(size).toBe('13px')
+		expect(size).toBe('13px');
 		
 	});
 
@@ -46,7 +46,7 @@ this.checkReports = function(){
 	expect(locator.dreports.getText()).toEqual("Reports");
 	locator.dreports.getCssValue('font-size').then(function(size){
 		
-		expect(size).toBe('13px')
+		expect(size).toBe('13px');
 	
 	});
 
@@ -59,7 +59,7 @@ this.checkComments = function(){
 	expect(locator.dcomments.getText()).toEqual("Comments");
 	locator.dcomments.getCssValue('font-size').then(function(size){
 		
-		expect(size).toBe('13px')
+		expect(size).toBe('13px');
 	
 	});
 

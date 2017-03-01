@@ -38,7 +38,7 @@ this.isOnlyForElements = function(){
 		expect(locators.profile.getText()).toContain("profile");
 
 	};
-}
+};
 
 //Function to verify that Logout is present or not also working or not
 this.verifiesLogout = function(){

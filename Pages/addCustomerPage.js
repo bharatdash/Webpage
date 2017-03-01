@@ -117,6 +117,6 @@ this.verifiesCancelButtonRedirectsBack = function(){
 
 	//Clicks the cancel button
 	locator.cancel_button.click();
-	expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/customers")
+	expect(browser.getCurrentUrl()).toEqual("http://amasik.com/demo/angularjs/angular-app/#/customers");
 
 };
