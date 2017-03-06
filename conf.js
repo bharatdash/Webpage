@@ -12,7 +12,7 @@ exports.config = {
 		//The spec files to be run
 		specs: ['spec/securitySpec.js'],
 
-		//Default Time out
+		//Options to be passed to jasmine and Default time to wait in ms before a test fails
 		jasmineNodeOpts: {defaultTimeoutInterval: 600000},
 
 		//Callback function before the specs are executed 
