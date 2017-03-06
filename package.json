@@ -1,0 +1,39 @@
+{
+  "name": "webpage",
+  "version": "1.0.0",
+  "description": "Demo project on AngularJS application using protractor",
+  "main": "conf.js",
+  "dependencies": {
+    "express": "^4.15.1",
+    "jasmine": "^2.5.3",
+    "selenium-webdriver": "^3.3.0"
+  },
+  "devDependencies": {
+    "protractor-jasmine2-html-reporter": "0.0.7"
+  },
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bharatdash/Webpage.git"
+  },
+  "keywords": [
+    "angular",
+    "test",
+    "testing",
+    "selenium",
+    "protractor",
+    "webdriver",
+    "git",
+    "jenkins",
+    "SCM",
+    "CI"
+  ],
+  "author": "Bharat Dash & Saumya Lathi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bharatdash/Webpage/issues"
+  },
+  "homepage": "https://github.com/bharatdash/Webpage#readme"
+}

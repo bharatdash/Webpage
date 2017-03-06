@@ -49,7 +49,7 @@ this.verifiesLogout = function(){
 	//click on logout
 	locators.logout.click();
 	
-	//sleep for 2min
+	//sleep for 2sec
 	browser.sleep(2000);
 	
 	//Check logout is working or not
